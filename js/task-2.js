@@ -1,11 +1,10 @@
 function makeArray(firstArray, secondArray, maxLength) {
-  const newGeneralArray = firstArray.concat(secondArray);
-  for (const newGeneralElement of newGeneralArray) {
-    if (newGeneralArray <= maxLength) {
-      return newGeneralArray;
-    } else {
-      return newGeneralArray.slice(0, maxLength);
-    }
+  const thirdArray = firstArray.concat(secondArray);
+
+  if (thirdArray.length > maxLength) {
+    return thirdArray.slice(0, maxLength);
+  } else {
+    return thirdArray;
   }
 }
 
